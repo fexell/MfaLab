@@ -1,0 +1,1 @@
+![Alt-text](MFA_Activated.jpg)
