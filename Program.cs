@@ -39,7 +39,7 @@ builder.Services.AddIdentityCore<ApplicationUser>(options =>
         // uppgiftstexten, även om vi registrerar Identity med AddIdentityCore
         // i stället för AddIdentity.
         options.Lockout.MaxFailedAccessAttempts = 5;
-        options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromSeconds(30);
+        options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
         options.Lockout.AllowedForNewUsers = true;
     })
     .AddEntityFrameworkStores<ApplicationDbContext>()
